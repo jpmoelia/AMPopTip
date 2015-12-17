@@ -81,9 +81,7 @@
     [UIView animateWithDuration:self.animationIn delay:self.delayIn usingSpringWithDamping:0.6 initialSpringVelocity:1.5 options:(UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionBeginFromCurrentState) animations:^{
         self.transform = CGAffineTransformIdentity;
     } completion:^(BOOL completed){
-        if (completed) {
             completion();
-        }
     }];
 }
 
